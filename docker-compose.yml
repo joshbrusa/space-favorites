@@ -1,0 +1,8 @@
+services:
+  frontend:
+    build: frontend
+    command: npm run dev
+    volumes:
+      - ./frontend:/frontend
+    ports:
+      - "3000:3000"
